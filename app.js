@@ -29,7 +29,7 @@ app.post("/tasks", async (req, res) => {
     res.status(201).send({ message: "Todo saved successfully", todo }); // Respond with the saved todo
   } catch (error) {
     console.error("Error while adding todo:", error.message);
-    res.status(500).send("Internal Server Error");
+    res.status(500).send("Enter a valid todo");
   }
 });
 
