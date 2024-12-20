@@ -1,6 +1,6 @@
 const express = require("express");
-const { connectDb } = require("./config/connectDb"); // Fixed typo in 'conenctDb' -> 'connectDb'
-const { Todo } = require("./models/todo");
+const { connectDb } = require("./src/config/connectDb"); // Fixed typo in 'conenctDb' -> 'connectDb'
+const { Todo } = require("./src/models/todo");
 const mongoose = require("mongoose");
 
 const app = express();
